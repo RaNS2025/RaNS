@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LLM-Driven Interactive Self-Learning and Skill Acquisition for Humanoid Robots">
+  <meta name="keywords" content="Robot, RL, Self-Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robots also Need Sleep: LLM-Driven Interactive Self-Learning and Skill Acquisition for Humanoid Robots</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png" type="image/png" sizes="220x192">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Robots also Need Sleep: LLM-Driven Interactive Self-Learning and Skill Acquisition for Humanoid Robots</h1>
+          <div class="is-size-5 publication-authors">
+            <p>Anonymous Author(s)</p>
+            <p>Affiliation</p>
+            <p>Address</p>
+            <p>email</p>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+                            <span class="link-block">
+                <a href="./static/paper/RaNS.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+                            <span class="link-block">
+                <a href="#"
+                  class="external-link button is-normal is-rounded is-dark"
+                  style="cursor: allowed;">
+                  <span class="icon">
+                    <i class="fas fa-code"></i> </span>
+                  <span>Code (coming soon)</span>
+                </a>
+              </span>
+        
+
+            </div>
+
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img src="./static/images/first_page.png"
+             class="interpolation-image"
+             alt="Interpolate start reference image."
+             style="height: 500px;margin-left: 5mm;"/>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Robots also Need Sleep</strong>, achieve a fully autonomous humanoid robot framework, implement (a) awake-sleep loop adapted to human schedules: learn and optimize strategies during the sleep stage in order to perform actions excellently during the waking stage, (b) interact with humans to complete the required tasks: obtain user instructions or potential requirements through LLM and intelligently deploy tasks for implementation, (c) whole-process autonomous learning: realize the complete data flow processing from human demonstration to strategy deployment, and independently complete the strategy adjustment and optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+<section class="section">
+  <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Humanoid robots possess the potential to acquire diverse, whole-body skills through methods like teleoperation, video-based imitation, or end-to-end motion control. However, these approaches often depend on labor-intensive curated datasets and expert-designed policies, constraining the robots' ability to autonomously learn new skills during dynamic human-robot interactions.
+          </p>
+          <p>
+            Drawing inspiration from the role of sleep in human memory consolidation—where hippocampal replay and neocortical integration reinforce learning through coordinated neural oscillations—We propose \textbf{RaNS} (\textbf{R}obots \textbf{a}lso \textbf{N}eed \textbf{S}leep), a novel framework that enables humanoid robots to become fully autonomous agents capable of learning new skills by leveraging the reasoning and multimodal perception capabilities of Large Language Models (LLMs) and Vision-Language Models (VLMs). During the robot's ``wake'' phase, the LLM engages in human interaction through natural language dialogue, using its reasoning capabilities to identify opportunities for skill acquisition. In the ``sleep'' phase, RaNS transforms multimodal data into structured spatial representations for motions policy training. LLMs dynamically optimize reward functions and Proximal Policy Optimization (PPO) hyperparameters, while VLMs continuously evaluate training progress. Learned policies are exported as ONNX models and stored in a dynamic policy repository. In later interactions, the LLM retrieves and deploys contextually appropriate policies to perform tasks or guide additional learning.
+          </p>
+          <p>
+            We evaluate RaNS in IsaacGym and MuJoCo simulations, as well as on the real-world **Zhiyuan Lingxi X1** humanoid robot. RaNS successfully acquires a diverse range of whole-body and personalized interactive behaviors. Compared to policy learning baselines by human experts, RaNS demonstrates better generalization across tasks and improved performance in continual learning. These results suggest a promising LLM-VLM-driven closed-loop systems for enabling adaptive, autonomous learning in humanoid robots.
+          </p>
+        </div>
+      </div>
+    </div>
+        <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+      </div>
+</section>
+
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/paper/RaNS.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
